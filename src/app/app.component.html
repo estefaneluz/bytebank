@@ -1,3 +1,8 @@
-<app-nova-transferencia (valoresComErro)="exibirModalErro($event)"></app-nova-transferencia>
+<header>
+  <a routerLink="extrato">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
+</header>
 
-<app-extrato></app-extrato>
+<main>
+  <router-outlet></router-outlet>
+</main>
