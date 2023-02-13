@@ -1,6 +1,7 @@
 import { NgModule, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NovaTransferenciaComponent } from "./nova-transferencia/nova-transferencia.component";
@@ -25,6 +26,7 @@ registerLocaleData(localePt, 'pt');
     imports: [
         BrowserModule,
         FormsModule,
+        HttpClientModule
     ]
 })
 export class AppModule { }
