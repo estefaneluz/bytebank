@@ -16,4 +16,8 @@ export class AppComponent {
     this.destino = $event.destino;
     this.valor = $event.valor;
   }
+
+  exibirModalErro(mensagem){
+   alert(mensagem);
+  }
 }
